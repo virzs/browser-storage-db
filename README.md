@@ -1,1 +1,1 @@
-# bower-storage-db
+# browser-storage-db
