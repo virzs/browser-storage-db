@@ -1,6 +1,6 @@
 {
   "name": "bsdb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -19,11 +19,7 @@
   },
   "homepage": "https://github.com/virzs/browser-storage-db#readme",
   "devDependencies": {
-    "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
-    "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
-    "core-js": "^3.19.0",
     "ts-loader": "^9.2.6",
     "typescript": "^4.4.4",
     "webpack": "^5.60.0",
