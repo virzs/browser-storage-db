@@ -3,9 +3,10 @@
     "outDir": "./lib",
     "noImplicitAny": true,
     "module": "es6",
-    "target": "es5",
+    "target": "es2017",
     "allowJs": false,
-    "declaration": true
+    "declaration": true,
+    "declarationDir": "./lib"
   },
   "exclude": ["./lib"]
 }
