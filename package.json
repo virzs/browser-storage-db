@@ -1,6 +1,6 @@
 {
   "name": "bsdb",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -30,5 +30,8 @@
     "typescript": "^4.4.4",
     "webpack": "^5.60.0",
     "webpack-cli": "^4.9.1"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }
