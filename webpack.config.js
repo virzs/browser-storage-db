@@ -1,11 +1,17 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   mode: "development",
   entry: "./src/index.ts",
   optimization: {
     minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        extractComments: false,
+      }),
+    ],
   },
   module: {
     rules: [
@@ -30,4 +36,5 @@ module.exports = {
     },
     path: path.resolve(__dirname, "lib"),
   },
+  devtool: false,
 };
