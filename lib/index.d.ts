@@ -1,3 +1,4 @@
+import { DBOpts } from "./interface";
 declare class Collection {
     name: any;
     storage: any;
@@ -43,12 +44,6 @@ declare class Collection {
     }): any;
     drop(): boolean;
     count(): any;
-}
-interface DBOpts {
-    storage: Storage | null;
-    database: string;
-    primaryKey?: string;
-    sep?: string;
 }
 declare class StorageDB {
     storage: Storage | null;
