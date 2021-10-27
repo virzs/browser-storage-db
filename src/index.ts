@@ -2,20 +2,10 @@
  * @Author: Vir
  * @Date: 2021-08-06 14:42:56
  * @Last Modified by: Vir
- * @Last Modified time: 2021-10-26 18:00:37
+ * @Last Modified time: 2021-10-27 09:28:20
  */
 
-interface Operators {
-  $eq: (val: any, tar: any) => boolean;
-  $gt: (val: number, tar: number) => boolean;
-  $gte: (val: number, tar: number) => boolean;
-  $in: (val: string | any[], tar: any) => boolean;
-  $lt: (val: number, tar: number) => boolean;
-  $lte: (val: number, tar: number) => boolean;
-  $ne: (val: any, tar: any) => boolean;
-  $nin: (val: string | any[], tar: any) => boolean;
-  _checkExist: (op: string) => op is keyof Operators;
-}
+import { DBOpts, Operators } from "./interface";
 
 const ops = ["$eq", "$gt", "$gte", "$in", "$lt", "$lte", "$ne", "$nin"];
 
@@ -560,12 +550,6 @@ class Collection {
 
     return data ? JSON.parse(data).length : undefined;
   }
-}
-interface DBOpts {
-  storage: Storage | null;
-  database: string;
-  primaryKey?: string;
-  sep?: string;
 }
 
 class StorageDB {
