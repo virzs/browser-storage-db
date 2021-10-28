@@ -17,12 +17,22 @@
 - remove (query, options)
 - drop ()
 
+## 安装
+
+``` ts
+yarn add bsdb
+
+or
+
+npm install bsdb -save
+```
+
 ## 使用
 
 ### 引入
 
 ``` ts
-import StorageDB from '@/utils/storage';
+import StorageDB from 'bsdb';
 
 const db = new StorageDB({
     storage: window.localStorage,     // 使用的本地存储
